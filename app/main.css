@@ -1,37 +1,53 @@
 body {
-  background: cornsilk;
   font-family: sans-serif;
 }
 
-
-.notes {
-  max-width: 10em;
-  margin: 0.5em;
-  padding-left: 0;
-  list-style: none;
+.planner-nav-bar {
+  font-size: 26px;
+  background-color: #259af4;
+  color: #fff;
+  padding: 5px;
 }
 
-
-.note {
-  margin-bottom: 0.5em;
-  padding: 0.5em;
-  background-color: #fdfdfd;
-  box-shadow: 0 0 0.3em .03em rgba(0,0,0,.3);
-}
-.note:hover {
-  box-shadow: 0 0 0.3em .03em rgba(0,0,0,.7);
-  transition: .6s;
+.planner-head {
+  font-size: 14px;
+  background-color: #eee;
+  color: #999;
+  height: 20px;
+  padding: 5px;
+  vertical-align: middle;
 }
 
-note:hover .delete {
-  visibility: visible;
+.planner-detail {
+  font-size: 0.8em;
+  margin: 3px;
+  border: 1px solid #eee;
+  width:12em; /* or whatever width you want. */
+  max-width:12em; /* or whatever width you want. */
+  display: inline-block;
 }
-.note .delete {
-  float: right;
-  padding: 0;
-  background-color: #fdfdfd;
+
+.planner-section {
+  margin: 10px;
+}
+
+.planner-detail > button {
+  display: block;
+  margin: 5px;
+  background-color: #eee;
   border: none;
-  cursor: pointer;
-  cursor: hand;
-  visibility: hidden;
 }
+
+.planner-detail > p {
+  display: block;
+  margin: 5px;
+  text-align: center;
+}
+
+.planner-lists {
+  padding: 0.5em;
+  border-top: 1px solid #eee;
+}
+
+
+

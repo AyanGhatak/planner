@@ -1,14 +1,23 @@
 import './main.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import { App, store} from './components/App.jsx';
 
 function main() {
   const app = document.createElement('div');
 
   document.body.appendChild(app);
 
-  ReactDOM.render(<App />, app);
+  const render = () => {
+    console.log(store.getState())
+    ReactDOM.render(
+      <App config={store.getState()} />,
+      app
+    );
+  }
+
+  store.subscribe(render);
+  render();
 }
 
 main();

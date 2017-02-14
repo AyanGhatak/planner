@@ -22,7 +22,7 @@ var common = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlwebpackPlugin({
-      title: 'Kanban app'
+      title: 'Week Plan'
     })
   ]
 };
@@ -49,7 +49,7 @@ if(TARGET === 'start' || !TARGET) {
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
       new HtmlwebpackPlugin({
-        title: 'Kanban app'
+        title: 'Week Plan'
       })
     ]
   });
